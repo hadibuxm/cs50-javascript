@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Count Page</title>
+	<script>
+		document.addEventListener("DOMContentLoaded", function(){
+			document.querySelector("#changecolor").onchange = ()=>{
+				const color = document.querySelector("#changecolor").value;
+				document.querySelector("#hello").style.color = color;
+			}
+			}
+		)
+	</script>
+	</head>
+	
+	<body>
+		<h1 id="hello">Hello</h1>
+		<select id="changecolor">
+		<option value="red">Red</option>
+		<option value="blue">Blue</option>
+		<option value="green">Green</option>
+		</select>
+		<!--
+		<button data-color="red">Red</button>
+		<button data-color="Green">Green</button>
+		<button data-color="Blue">Blue</button>-->
+	</body>
+</html>
